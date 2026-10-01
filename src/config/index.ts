@@ -1,23 +1,21 @@
 import type { SiteConfig, SiteContent } from "../types";
 
 export const SITE_CONFIG: SiteConfig = {
-  title: "Alejandro Múnez — Mobile & Web Developer",
-  author: "Alejandro Múnez Cuntez",
+  title: "Muhamad Hafiz Saputra — Mobile & Web Developer",
+  author: "Muhamad Hafiz Saputra",
   description:
-    "Software Engineer based in San Francisco, USA. I specialize in UI design, web and mobile application development and maintenance.",
+    "Developer based in Yogyakarta, Indonesia. I specialize in enterprise web applications, scalable e-procurement systems, and robust backend architectures using Laravel, Go, and React.",
   lang: "en",
-  siteLogo: "/alejandro-small.jpg",
+  siteLogo: "/foto gua.jpeg",
   navLinks: [
     { text: "Experience", href: "#experience" },
     { text: "Projects", href: "#projects" },
     { text: "About", href: "#about" },
   ],
   socialLinks: [
-    { text: "Twitter", href: "https://github.com/immois/astro-zen" },
-    { text: "LinkedIn", href: "https://github.com/immois/astro-zen" },
-    { text: "Github", href: "https://github.com/immois/astro-zen" },
-    { text: "Youtube", href: "https://github.com/immois/astro-zen" },
-    { text: "Dribbble", href: "https://github.com/immois/astro-zen" },
+    { text: "LinkedIn", href: "https://www.linkedin.com/in/muhamadhafizsaputra" },
+    { text: "Github", href: "https://github.com/muhamadhafizsaputra" },
+    { text: "Email", href: "https://mail.google.com/mail/?view=cm&fs=1&to=muhamadhafizsaputra1@gmail.com" }
   ],
   socialImage: "/zen-og.png",
   canonicalURL: "https://astro-zen.vercel.app",
@@ -25,73 +23,65 @@ export const SITE_CONFIG: SiteConfig = {
 
 export const SITE_CONTENT: SiteContent = {
   hero: {
-    name: "Alejandro Múnez",
-    specialty: "Mobile & Web Developer",
+    name: "Muhamad Hafiz Saputra",
+    specialty: "Full Stack Web Developer",
     summary:
-      "Developer based in San Francisco, USA. I specialize in UI design, web and mobile application development and maintenance.",
-    email: "example@email.com",
+      "Computer Science student and developer based in Yogyakarta, Indonesia. I specialize in full-stack web development, building scalable applications and dashboards using React, Next.js, Laravel, and Docker.",
+    email: "muhamadhafizsaputra1@gmail.com",
   },
   experience: [
     {
-      company: "Zalmart",
-      position: "Lead Android Developer",
-      startDate: "May 2018",
-      endDate: "Sept 2020",
+      company: "Sinergi Informatika Semen Indonesia",
+      position: "Full Stack Software Engineer Intern",
+      startDate: "Jan 2026",
+      endDate: "Mei 2020",
       summary: [
-        "Implemented advanced memory management and code optimization techniques, resulting in a reduction in application load time by 40% and a decrease in crashes by 25%. This significantly improved user experience and increased user retention by 20%.",
-        "I led a team of developers in building and integrating new features using Jetpack Android components such as LiveData and ViewModel. This enabled us to build scalable and maintainable applications, reducing the crash rate by 20% and speeding up the time to delivery of new features by 15%.",
-        "Integrated Google Pay for in-app purchases, resulting in a 35% increase in mobile transaction revenue. Additionally, implemented Firebase Analytics to gain insights into user behavior, enabling data-driven optimizations and a 30% increase in user retention.",
+        "Engineered an automated multi-tenant contract notification engine in Laravel across dual-database architectures (PostgreSQL & MySQL), supporting per-Project Manager threshold configurations and global fallbacks, reducing manual contract tracking overhead by 85%.",
+        "Implemented a 120-day intelligent caching mechanism and rate-limited batch processing for automated Telegram & SMTP email services, completely eliminating duplicate alert notifications and preventing API rate-limit throttling (HTTP 429).",
+        "Optimized complex cross-database SQL queries with dynamic aggregation (DATEDIFF, conditional joins, status filtering) across licenses, customer, and vendor contracts, accelerating dashboard backend response times by 35%.",
       ],
     },
     {
-      company: "Bankit",
-      position: "Mobile Developer",
-      startDate: "Feb 2017",
-      endDate: "May 2018",
+      company: "Eduprima",
+      position: "Coding Tutor",
+      startDate: "Oct 2025",
+      endDate: "Dec 2025",
       summary: [
-        "I designed and developed a mobile application using Flutter, allowing it to be deployed on both Android and iOS with a single codebase. This reduced development time by 50% and maintenance costs by 30%, facilitating a consistent user experience on both platforms.",
-        "I integrated biometric authentication and data encryption, significantly improving the security of user data. This implementation resulted in a 40% increase in user trust and a 25% reduction in unauthorized access attempts.",
+        "Developed customized, engaging lesson plans to teach fundamental programming concepts using MakeCode Python and Micro:bit to a young learner.",
+        "Successfully translated complex coding logic, including arrays and functions, into age-appropriate educational projects to build early computational thinking skills.",
       ],
-    },
-    {
-      company: "Driveer",
-      position: "Frontend Developer",
-      startDate: "Jun 2015",
-      endDate: "Oct 2016",
-      summary:
-        "Developed and integrated a real-time vehicle tracking system using WebSockets, improving accuracy and data update in the application. This functionality increased user satisfaction by 30% and reduced customer service inquiries by 25%.",
-    },
+    }
   ],
   projects: [
     {
-      name: "Spotifu Music",
-      summary: "A music streaming app that emulates Spotify's core features.",
-      linkPreview: "/",
+      name: "Discover Batur",
+      summary: "A digital directory connecting Batur tourism and local MSMEs.",
+      linkPreview: "https://discoverbatur.vercel.app/",
       linkSource: "https://github.com/immois/astro-zen",
-      image: "/spotifu.png",
+      image: "/batur.png",
     },
     {
-      name: "Shopp App",
-      summary: "An e-commerce platform that replicates Shopify's key features.",
-      linkPreview: "/",
+      name: "Teman Ibu",
+      summary: "Stunting prevention web application built with Next.js.",
+      linkPreview: "https://teman-ibu.vercel.app/",
       linkSource: "https://github.com/immois/astro-zen",
-      image: "/shopify-clon.png",
+      image: "/temanibu.png",
     },
     {
-      name: "ClonTagram",
-      summary: "A social network that replicates the features of Instagram",
+      name: "Sky Grab",
+      summary: "Cloud video downloader with automated task scheduling.",
       linkPreview: "/",
-      linkSource: "https://github.com/immois/astro-zen",
-      image: "/clone-ig.png",
+      linkSource: "https://github.com/MuhamadHafizSaputra/sky-grab",
+      image: "/sky grab.png",
     },
   ],
   about: {
     description: `
-      Hi, I’m Alejandro Múnez, a passionate Mobile and Web Developer with a knack for crafting seamless digital experiences. With a strong background in both Android and iOS development, as well as front-end web technologies, I thrive in the intersection where creativity meets technology.
+      Hi, I’m Muhamad Hafiz Saputra, a dedicated Software Engineer with a passion for building scalable, data driven applications. With professional experience engineering enterprise grade solutions, including e-procurement platforms and complex monitoring dashboards, I thrive on translating intricate business requirements into seamless digital experiences.
 
-      Over the years, I’ve honed my skills in building robust, user-friendly applications that not only meet the needs of users but also push the boundaries of what’s possible. My projects range from innovative mobile applications to responsive web designs, all with a focus on performance, security, and scalability.
+      Over the years, I’ve honed my technical stack across Laravel, Go, and React, alongside a strong foundation in optimizing complex SQL logic and handling SAP data integrations. My projects range from API heavy backend architectures for hardware sensors to comprehensive enterprise portals, all built with a strict focus on system performance, secure data communication, and operational efficiency.
     `,
-    image: "/alejandro-big.jpg",
+    image: "/foto gua.jpeg",
   },
 };
 

@@ -1,0 +1,12 @@
+services:
+  app:
+    build: .
+    ports:
+      - "4321:4321"
+    volumes:
+      # Sync source code changes for live editing
+      - .:/app
+      # Keep node_modules isolated inside a container volume (never touches your host)
+      - /app/node_modules
+    environment:
+      - NODE_ENV=development

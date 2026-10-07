@@ -17,15 +17,17 @@ const { projects } = Astro.props;
       return (
         <div
           style={`top: ${top}px;`}
-          class="sticky mb-12 rounded-2xl border border-neutral/20 bg-black"
+          class="sticky mb-12 overflow-hidden rounded-2xl border border-neutral/20 bg-black"
         >
-          <div class="bg-difu relative z-1 grid h-145 w-full grid-rows-2 rounded-2xl bg-[#1c232d]/85 before:absolute before:inset-0 before:z-[-1] before:rounded-2xl before:bg-[url(/raja.png)] before:bg-size-[128px] before:bg-repeat before:opacity-5 before:content-[''] sm:grid-cols-2 sm:grid-rows-1 md:h-96">
-            <div class="px-6 pt-12">
-              <h3 class="mb-5 font-serif text-3xl font-medium text-primary">
-                {name}
-              </h3>
-              <p class="text-base text-neutral">{summary}</p>
-              <div class="flex gap-5 pt-10 text-white">
+          <div class="bg-difu relative z-1 grid min-h-[38rem] sm:min-h-96 md:min-h-[25rem] h-auto w-full grid-rows-[auto_1fr] rounded-2xl bg-[#1c232d]/85 before:absolute before:inset-0 before:z-[-1] before:rounded-2xl before:bg-[url(/raja.png)] before:bg-size-[128px] before:bg-repeat before:opacity-5 before:content-[''] sm:grid-cols-2 sm:grid-rows-1">
+            <div class="flex flex-col justify-between p-6 sm:p-8 md:p-10">
+              <div>
+                <h3 class="mb-4 font-serif text-3xl font-medium text-primary">
+                  {name}
+                </h3>
+                <p class="text-sm leading-relaxed text-neutral md:text-base">{summary}</p>
+              </div>
+              <div class="flex gap-5 pt-6 text-white">
                 <a
                   href={linkSource}
                   target="_blank"

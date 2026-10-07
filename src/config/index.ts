@@ -55,24 +55,40 @@ export const SITE_CONTENT: SiteContent = {
   projects: [
     {
       name: "Discover Batur",
-      summary: "A digital directory connecting Batur tourism and local MSMEs.",
+      summary: "An interactive digital directory and GIS tourism platform connecting visitors with local Batur MSMEs through responsive map navigation, categorized store listings, and seamless search, built with React, TypeScript, Vite, MapLibre GL, and Tailwind CSS.",
       linkPreview: "https://discoverbatur.vercel.app/",
       linkSource: "https://github.com/immois/astro-zen",
       image: "/batur.png",
     },
     {
       name: "Teman Ibu",
-      summary: "Stunting prevention web application built with Next.js.",
+      summary: "A comprehensive digital health web application for stunting prevention featuring automated WHO-standard nutritional status evaluation, interactive child growth tracking charts, and personalized MPASI dietary recommendations, built with Next.js, React, TypeScript, Tailwind CSS, and Recharts.",
       linkPreview: "https://teman-ibu.vercel.app/",
       linkSource: "https://github.com/immois/astro-zen",
       image: "/temanibu.png",
     },
     {
       name: "Sky Grab",
-      summary: "Cloud video downloader with automated task scheduling.",
+      summary: "A scalable cloud video downloader and media management platform featuring automated background download scheduling, batch URL processing, and direct cloud storage synchronization, built with Laravel, PHP, MySQL, Cloudinary API, Guzzle HTTP, and Docker.",
       linkPreview: "/",
       linkSource: "https://github.com/MuhamadHafizSaputra/sky-grab",
       image: "/sky grab.png",
+    },
+    {
+      name: "Sijinak",
+      summary:
+        "An integrated school attendance and student activity management platform featuring automated QR code scanning, parent-teacher leave request workflows, and multi-role monitoring dashboards, built with Laravel, PHP, MySQL, Google OAuth SSO, DataTables, and Docker",
+      linkPreview: "https://ekspedisi-production.up.railway.app/",
+      linkSource: "https://github.com/sigidhanafi/sijinak",
+      image: "/sijinak.png",
+    },
+    {
+      name: "Buku Ekspedisi",
+      summary:
+        "Ekspedisi is a digital outgoing mail management platform designed to streamline correspondence tracking, facilitate secure signature verification, record user audit logs, and generate official reports, powered by modern Next.js, PostgreSQL, and Docker container based architecture.",
+      linkPreview: "https://ekspedisi-production.up.railway.app/",
+      linkSource: "https://github.com/gafnaa/ekspedisi",
+      image: "/ekspedisi.png",
     },
   ],
   about: {

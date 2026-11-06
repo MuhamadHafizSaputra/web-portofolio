@@ -28,6 +28,7 @@ export const SITE_CONTENT: SiteContent = {
     summary:
       "Computer Science student and developer based in Yogyakarta, Indonesia. I specialize in full-stack web development, building scalable applications and dashboards using React, Next.js, Laravel, and Docker.",
     email: "muhamadhafizsaputra1@gmail.com",
+    cvLink: "/Muhamad Hafiz Saputra-Resume.pdf",
   },
   experience: [
     {

@@ -2,7 +2,13 @@
 import type { HeroProps } from "@types";
 type Props = HeroProps;
 
-const { name, specialty, summary, email } = Astro.props;
+const {
+  name,
+  specialty,
+  summary,
+  email,
+  cvLink = "/Muhamad Hafiz Saputra-Resume.pdf",
+} = Astro.props;
 ---
 
 <section class="py-24 md:py-32" id="#hero">
@@ -20,10 +26,19 @@ const { name, specialty, summary, email } = Astro.props;
     {summary}
   </p>
 
-  <a
-    class="inline-block rounded-full bg-primary px-8 py-5 text-sm leading-5 font-medium text-[#fff]"
-    href={`https://mail.google.com/mail/?view=cm&fs=1&to=${email}`}
-    target="_blank"
-    rel="noreferrer noopener">Get in Touch</a
-  >
+  <div class="flex flex-wrap items-center gap-4">
+    <a
+      class="inline-block rounded-full bg-primary px-8 py-5 text-sm leading-5 font-medium text-white transition hover:opacity-90"
+      href={`https://mail.google.com/mail/?view=cm&fs=1&to=${email}`}
+      target="_blank"
+      rel="noreferrer noopener">Get in Touch</a
+    >
+    <a
+      class="inline-block rounded-full bg-white px-8 py-5 text-sm leading-5 font-semibold text-[#0e141b] shadow-sm transition hover:bg-white/90 active:scale-95"
+      href={cvLink}
+      target="_blank"
+      rel="noreferrer noopener"
+      download>Download CV</a
+    >
+  </div>
 </section>
